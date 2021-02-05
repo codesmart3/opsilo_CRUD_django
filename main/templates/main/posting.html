@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Posting!</title>
+    </head>
+    <body>
+        <p><h4>Title:</h4>{{post.postname}}</p>
+        <p><h4>Contents: </h4>{{post.contents}}</p>
+        {% if post.mainphoto %}
+            <img src = "{{ post.mainphoto.url }}" alt="" height="600">
+            <br>
+        {% endif %}
+        <p><h4>Date: </h4>{{post.date}}</p>
+        <a href="/blog/">List</a>
+        <a href="/blog/{{post.pk}}/remove">Delete</a>
+        <a href="/blog/{{post.pk}}/edit">Update</a>
+    </body>
+</html>

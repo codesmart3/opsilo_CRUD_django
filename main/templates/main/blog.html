@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Posting List</title>
+    </head>
+    <body>
+        <h1>Posting List</h1>
+        <table>
+            {% for list in postlist %}
+                <!-- 게시글 클릭시 세부페이지로 넘어갑니다-->
+                <ul>
+                    <li><a href="{{list.pk}}/">{{list.postname}}</a></li>
+                </ul>
+            {% endfor %}
+        </table>
+        <button><a href="new_post/">New Post</a></button>
+        <button><a href="/blog/remove_all">Delete All</a></button>
+    </body>
+</html>

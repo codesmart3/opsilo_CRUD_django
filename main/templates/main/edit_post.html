@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Page</title>
+</head>
+<body>
+    <h1>Edit Page</h1>
+    <form method="POST">
+        {% csrf_token %}
+        Title<br>
+        <input type="text" name="postname"><br>
+        <br>
+        Contents<br>
+        <textarea rows="10" cols="50" name="contents"></textarea><br>
+        <br>
+        <input type="file" name="mainphoto"><br>
+        <br>
+        <input type="submit" value="UPDATE">
+    </form>
+</body>
+</html>
