@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-1lx8aw#hd$x2l*gp+fg)dm=#up*l&!f(+hwvn!#ychy6&7$lb0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sample-board-8080-demo-python.apps.c1.opsilo.io', '127.0.0.1']
-#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['board-sample-8080-demo-python.apps.c1.opsilo.io', '127.0.0.1']
 
 
 # Application definition
